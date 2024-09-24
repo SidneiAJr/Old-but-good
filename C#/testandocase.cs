@@ -1,11 +1,13 @@
 using System;
-class progcalculotempo(){
-    int tempo=0;
-    char Escolha=;
+class progtempo(){
+    static void main(){
+        int tempo=0;
+        char escolha;
+    
     Console.WriteLine("Transportes pelo brasil: ");
     Console.WriteLine("Escola o tipo de transporte:[a]Aviao|[c]carro|[o]Onibus");
     escolha=char.Parse(console.Read());
-    switch(){
+    switch(escolha){
         case 'a':
         tempo = 50;
         break;
@@ -13,15 +15,16 @@ class progcalculotempo(){
         tempo= 480;
         break;
         case 'o':
-        tempo =600;
+        tempo = 600;
         break;
         default:
         tempo=-1;
-        break
+        break;
     }
     if(tempo<0){
      Console.WriteLine("Transporte Não reconhecido");
     }else{
-Console.WriteLine("Tempo escolhido:{0} Minutos",tempo);
+     Console.WriteLine("Tempo escolhido:{0} Minutos",tempo);
     }
+}
 }
