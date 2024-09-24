@@ -1,0 +1,53 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. GERADORCSV.
+       ENVIRONMENT DIVISION.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+       SELECT ARQCSV ASSIGN TO 
+       'C:\Users\\Desktop\Projetos-Trabalhos-2024\ARQCSV.CSV'
+       ORGANIZATION IS LINE SEQUENTIAL.
+       DATA DIVISION.
+       FILE SECTION.
+       FD ARQCSV.
+       01 REG-CSV PIC X(70).
+       
+       WORKING-STORAGE SECTION.
+       77 WS-EOF  PIC X(1) VALUE SPACE. 
+       01 WS-CSV.
+         03 CSV-NOME   PIC X(10).
+         03 FILLER  PIC X VALUE ';'.
+         03 CSV-ENDERECO   PIC X(10).
+         03 FILLER  PIC X VALUE ';'.
+         03 CSV-IDADE   PIC X(10).
+         03 FILLER  PIC X VALUE ';'.
+         03 CSV-CIDADE   PIC X(10).
+         03 FILLER  PIC X VALUE ';'.
+         03 CSV-TELEFONE   PIC X(10).
+         03 FILLER  PIC X VALUE ';'.
+         
+       PROCEDURE DIVISION.
+       MAIN-PROCEDURE.
+       MOVE 'i' TO WS-EOF
+       OPEN OUTPUT ARQCSV
+       PERFORM UNTIL WS-EOF = 'F'
+       DISPLAY 'INFORME O NOME: '
+       ACCEPT CSV-NOME
+       DISPLAY 'INFORME O ENDERECO:'
+       ACCEPT CSV-ENDERECO
+       DISPLAY 'INFORME O IDADE: '
+       ACCEPT CSV-IDADE
+       DISPLAY 'INFORME O CIDADE: '
+       ACCEPT CSV-CIDADE
+       DISPLAY 'INFORME O TELEFONE '
+       ACCEPT CSV-TELEFONE
+       
+       MOVE WS-CSV TO REG-CSV
+       
+       WRITE REG-CSV
+       
+       DISPLAY 'TECLE <F> PARA FINALIZAR'
+       ACCEPT WS-EOF
+       
+       END-PERFORM
+       CLOSE ARQCSV
+       GOBACK.
