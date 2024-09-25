@@ -1,15 +1,6 @@
-using System;
-class Aula03{
-    static void Main(){
-        int numero=0;
-        char letra='A';
-        float valor=5.3f;
-        byte n1 = 10;
-        string nome="Bruno";    
-        
-        var aux =nome;
+using teste.Models;
 
-        Console.WriteLine(aux);
-
-    }
-}
+Pessoa pessoa1 = new Pessoa();
+pessoa1.Nome="vrau";
+pessoa1.idade=26;
+pessoa1.Apresentar();
