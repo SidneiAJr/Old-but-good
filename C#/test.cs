@@ -1,3 +1,5 @@
+//Usar dotnet, pois o csc não funciona. 
+
 using teste.Models;
 
 Pessoa pessoa1 = new Pessoa();
