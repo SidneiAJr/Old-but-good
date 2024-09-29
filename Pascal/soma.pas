@@ -14,8 +14,9 @@ Readln(v2);
 Write('Por favor insira sua nota:');
 Readln(v3);
 
-Writeln('Por favor insira sua nota:',res);
 res:=v1+v2+v3;
+Write('O total é: ',res);
+
 
  
 end.
