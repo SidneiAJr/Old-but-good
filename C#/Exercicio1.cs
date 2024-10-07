@@ -35,9 +35,12 @@ public class HelloWorld
        Console.WriteLine("A Multiplicacao e:{0}",multiplicar);
        Console.WriteLine("Subtracao:{0}",dimiuir);
        if (soma<4){
-        Console.WriteLine("A soma e verdadeira");
-       }else
-       Console.WriteLine("A soma e falsa");
+        Console.WriteLine("A soma e Verdadeira");
+       }else if(soma<3){
+        Console.WriteLine("Quem ganha vai perde, quem perde vai ganha");   
+       }else{
+         Console.WriteLine("A soma e Falsa");  
+       }
         Console.WriteLine("===Fim do programa===");
       
       
