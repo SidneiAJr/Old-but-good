@@ -10,11 +10,12 @@ public class HelloWorld
         int num2 = 20;
         int num3 = 30;
 
-        Console.WriteLine(num1>5);
-        Console.WriteLine(num1<5);
+        Console.WriteLine(num1>num2);
+        Console.WriteLine(num1<num2);
         Console.WriteLine(num1 == num2);
         Console.WriteLine(num1 != num2);
-        
+        Console.WriteLine(num1>=num2);
+        Console.WriteLine(num1<=num2);
     }
 }
 
