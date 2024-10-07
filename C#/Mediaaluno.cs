@@ -20,7 +20,7 @@ namespace Teste
          
 
         Console.WriteLine("Seu Nome{0}:" ,nome);
-        Console.WriteLine("Sua Media é:{0}",media);
+        Console.WriteLine("Sua Media e:{0}",media);
       
 
         }
