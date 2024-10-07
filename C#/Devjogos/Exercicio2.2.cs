@@ -32,7 +32,7 @@ public class HelloWorld
         Console.WriteLine("O Resto da divisao dele por 2 tem que igual{0}",testandopar3);
         Console.WriteLine("O Resto da divisao dele por 2 tem que igual{0}",testandopar4);
         Console.WriteLine("O Resto da divisao dele por 2 tem que igual{0}",testandopar5);
-
+        Console.WriteLine("PARA DESCOBRIR SE UM NUMERO E PAR, O RESTO DA DIVISÃO DELE POR 2 TEM QUE SEIGUAL A 0 E PARA DESCOBRIR SE E UM NUMERO E IMPAR O RESTO DA DIVISÃO PRECDELE POR 2 QUE SER 1")
 
 
 
