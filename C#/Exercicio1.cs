@@ -17,7 +17,7 @@ public class HelloWorld
         int multiplicar;
         int dimiuir;
         
-        Console.WriteLine ("================Bem vindo==============");
+        Console.WriteLine ("=====Bem vindo======");
       Console.WriteLine("O Numero e:{0}",numero1);
       Console.WriteLine("O Numero e:{0}",numero2);
       Console.WriteLine("O Numero e:{0}",numero3);
@@ -31,10 +31,14 @@ public class HelloWorld
       dividir= numero1/numero2/numero3/numero4;
       multiplicar = numero1*numero2*numero3*numero4;
       dimiuir = numero1-numero2-numero3-numero4;
-       Console.WriteLine("A soma e:{0}",dividir);
-    Console.WriteLine("A soma e:{0}",multiplicar);
-        Console.WriteLine("A soma e:{0}",dimiuir);
-       
+       Console.WriteLine("A Divisão e:{0}",dividir);
+       Console.WriteLine("A Multiplicacao e:{0}",multiplicar);
+       Console.WriteLine("Subtracao:{0}",dimiuir);
+       if (soma<4){
+        Console.WriteLine("A soma e verdadeira");
+       }else
+       Console.WriteLine("A soma e falsa");
+        Console.WriteLine("===Fim do programa===");
       
       
 
