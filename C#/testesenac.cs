@@ -17,11 +17,10 @@ public class HelloWorld
         string nome = "Alberto";
         bool aprovado = true;
         
-        Console.WriteLine($"Meu nome e:{nome}e tenho:{altura}Minha Inicial e:{inicial}");
+        Console.WriteLine($"Meu nome {nome} e tenho{altura} Minha Inicial e {inicial}");
         
       
       
 
     }
 }
-
