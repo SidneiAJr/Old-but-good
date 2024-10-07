@@ -5,7 +5,6 @@ public class HelloWorld
 {
     public static void Main(string[] args)
     {
-        
         int num1=2;
         int num2=4;
         int num3=20;
@@ -27,17 +26,12 @@ public class HelloWorld
         testandopar3=num3%2;
         testandopar4=num4%2;
         testandopar5=num5%2;
-        Console.WriteLine(testandopar);
-        Console.WriteLine(testandopar2);
+        Console.WriteLine("O Resto da divisão dele por 2 tem que igual{0}",testandopar);
+        Console.WriteLine("O Resto da divisão dele por 2 tem que igual{0}",testandopar2);
         Console.WriteLine("O Resto da divisão dele por 2 tem que igual{0}",testandopar3);
         Console.WriteLine("O Resto da divisão dele por 2 tem que igual{0}",testandopar4);
         Console.WriteLine("O Resto da divisão dele por 2 tem que igual{0}",testandopar5);
 
-
-
-
-
-        
     }
 }
 
