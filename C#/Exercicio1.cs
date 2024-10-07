@@ -16,6 +16,11 @@ public class HelloWorld
         int dividir;
         int multiplicar;
         int dimiuir;
+        //int inteiro
+        //double numero quebrado
+        //char caractere
+        //string texto
+        //bool verdadeiro falso
         
         Console.WriteLine ("=====Bem vindo======");
       Console.WriteLine("O Numero e:{0}",numero1);
@@ -34,9 +39,9 @@ public class HelloWorld
        Console.WriteLine("A Divisão e:{0}",dividir);
        Console.WriteLine("A Multiplicacao e:{0}",multiplicar);
        Console.WriteLine("Subtracao:{0}",dimiuir);
-       if (soma<4){
+       if (soma==4){
         Console.WriteLine("A soma e Verdadeira");
-       }else if(soma<3){
+       }else if(soma<2){
         Console.WriteLine("Quem ganha vai perde, quem perde vai ganha");   
        }else{
          Console.WriteLine("A soma e Falsa");  
