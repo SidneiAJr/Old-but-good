@@ -10,12 +10,13 @@ public class HelloWorld
         int num2 = 20;
         int num3 = 30;
 
-        Console.WriteLine(num1>num2);
-        Console.WriteLine(num1<num2);
-        Console.WriteLine(num1 == num2);
-        Console.WriteLine(num1 != num2);
-        Console.WriteLine(num1>=num2);
-        Console.WriteLine(num1<=num2);
+        Console.WriteLine("A comparacao E:{0}",num1>num2);
+        Console.WriteLine("A comparacao E:{0}",num1<num2);
+        Console.WriteLine("A comparacao E:{0}",num1 == num2);
+        Console.WriteLine("A comparacao E:{0}",num1 != num2);
+        Console.WriteLine("A comparacao E:{0}",num1>=num2);
+        Console.WriteLine("A comparacao E:{0}",num1<=num2);
+        Console.WriteLine ("================Fim==============");
     }
 }
 
