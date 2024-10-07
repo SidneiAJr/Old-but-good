@@ -22,6 +22,7 @@ public class operadoresAritmeticos
         Console.WriteLine("Valor da composicao e:{0}",soma);
         Console.WriteLine("Valor da composicao e:{0}",subtracao);
         Console.WriteLine("Valor da composicao e:{0}",mult);
+        Console.WriteLine("Valor da composicao e:{0}",resto);
 
 
         
