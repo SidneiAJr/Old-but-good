@@ -8,7 +8,6 @@ public class HelloWorld
         Console.WriteLine ("================Bem vindo==============");
         int num1 = 10;
         int num2 = 20;
-        int num3 = 30;
 
         Console.WriteLine("A comparacao E:{0}",num1>num2);
         Console.WriteLine("A comparacao E:{0}",num1<num2);
