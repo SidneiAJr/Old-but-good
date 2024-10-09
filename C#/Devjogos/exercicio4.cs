@@ -8,22 +8,16 @@ public class HelloWorld
         
         int hora = 20;
         
-        
-        Console.WriteLine ("================Bem vindo==============");
-       if(hora<6){
+       if(hora>=6&&hora<12){
        Console.WriteLine ("Manhã"); 
-       }else if(hora<12){
+       }else if(hora>= 12 && hora <18){
         Console.WriteLine ("Tarde");
-       }else if(hora<19){
-        Console.WriteLine ("Noite");
+       }else if(hora >= 18 && hora <= 23){
+        Console.WriteLine ("E de noite");   
        }else{
-        Console.WriteLine ("Madrugada");   
+        Console.WriteLine ("E de madruga");    
        }
 
-    
-
-        Console.WriteLine ("==========Obrigado Por Usar!==========");
         
     }
 }
-
