@@ -23,10 +23,7 @@ namespace Teste
             deb=valini;
             rest=(crediario*0.05)*12/parcelas;
             
-            
-            
-            
-            Console.WriteLine("O Valor no debito e:R${0}",deb);
+            Console.WriteLine("O Valor Inicial será R${0}",valini);
             Console.WriteLine("O Valor no cartao de credito em parcelas e:R${0}",credi);
             Console.WriteLine("O Valor no Crediario sera:R${0}",crediario);
             Console.WriteLine("O Valor Original sem desconto:R${0}",valini);
