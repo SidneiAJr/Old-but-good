@@ -10,17 +10,19 @@ public class HelloWorld
         
         
         Console.WriteLine ("================Bem vindo==============");
-       if(hora==6){
-       Console.WriteLine ("Bom dia!"); 
+       if(hora<6){
+       Console.WriteLine ("Manhã"); 
        }else if(hora<12){
-        Console.WriteLine ("Boa tarde!");
+        Console.WriteLine ("Tarde");
+       }else if(hora<19){
+        Console.WriteLine ("Noite");
        }else{
-        Console.WriteLine ("Boa Noite!");
+        Console.WriteLine ("Madrugada");   
        }
 
     
 
-        Console.WriteLine ("================Obrigado Por Usar!==============");
+        Console.WriteLine ("==========Obrigado Por Usar!==========");
         
     }
 }
