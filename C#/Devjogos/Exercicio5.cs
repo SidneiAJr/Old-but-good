@@ -5,15 +5,15 @@ namespace Teste
     {
         static void Main()
         {
-        int num=10;
+        int num=9;
         
-        while(num>0){
+        while(num>=0){
         if(num==0){
-            Console.Write("Boom");
+            Console.WriteLine("Boom");
         }else if(num %2 ==0){
-           Console.Write("TIC");  
+           Console.WriteLine("TIC");  
         }else{
-          Console.Write("TAC");    
+          Console.WriteLine("TAC");    
         }
        num--;
        
