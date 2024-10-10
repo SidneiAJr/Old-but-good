@@ -6,3 +6,7 @@ sites para lembrar
 4-https://replit.com/signup
 5-https://www.photopea.com/
 =======
+
+=======
+1-Compiladores: https://www.programiz.com/csharp-programming/online-compiler/
+2- https://www.onlinegdb.com/online_csharp_compiler
