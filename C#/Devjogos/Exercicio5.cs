@@ -18,6 +18,9 @@ namespace Teste
        num--;
        
         }
+        // Outra  Maneira de fazer é:
+        //while(segundo>0)
+        //if(Segundo%2==0)
         
         
         }
