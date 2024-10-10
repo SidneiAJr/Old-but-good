@@ -13,7 +13,7 @@ public class HelloWorld
         {
          int voltas = 0;
           //Loop While(Enquanto)
-          while(voltas<=10){
+          while(voltas<=30){
           Console.WriteLine($"Voce esta na volta: {voltas}");
           voltas = voltas+1;
           //voltas += 500
