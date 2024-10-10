@@ -18,3 +18,21 @@ namespace Teste
         
     }
 }
+using System;
+namespace Teste
+{
+    class Program
+    {
+        static void Main()
+        {
+        string [] arrayts = new string[5]{"1-BF3","2-WF","3-Warthunder","4-BF1","5-PB"};
+        
+        
+        
+        for(int i = 0; i<arrayts.Length; i++){
+        Console.WriteLine("A posicao e:{0}",(arrayts[i]));
+        }
+        }
+        
+    }
+}
