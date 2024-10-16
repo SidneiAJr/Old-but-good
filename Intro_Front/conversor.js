@@ -10,6 +10,11 @@ const taxas = {
     "CNY": 0.79,
     "Gold": 0.0291,
 }
-
+if(valor&& !isNaN(valor)){
+    const convertido = valor*taxas[moeda]
+    document.getElementById("resultado").innerHTML = `O Valor convertido é:${convertido.toFixed(2)}${moeda}`  
+}else{
+    document.getElementById("resultado").innerHTML = "Por Favor insira um valor valido"
+}
 }
 
