@@ -2,27 +2,17 @@
     text-align: center;
     border: 0px;
     float: none;
-    background-color:brown;
+    background-color:grey;
     border: 30px;
     border-color: blue;
     text-decoration: dotted;
     text-transform:uppercase;
-    text-decoration: double;
     text-wrap: 10px;
+    border-radius: 20px;
+    border-width: 20px;
+    border-left: 50px;
+    text-overflow: inherit;
+    text-shadow: 50px;
+    text-decoration-color: black;
 }
-.container2{
-    text-align: center;
-    border: 0px;
-    float: none;
-    background-color:gray;
-    border-color: red;
-    text-transform:uppercase;
-    text-decoration: double;
-    text-wrap: 10px;
-    text-decoration-color: brown;
-}
-.resultado{
-    text-align: center;
-    float: center;
-    text-transform: lowercase;
-}
+
