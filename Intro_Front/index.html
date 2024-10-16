@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Pagina</title>
+    <title>Conversor de Moedas</title>
     <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+    <script src="conversor.js"></script>
 </head>
 <body>
-    <form id="testando"><H1 id="titulo">Bem vindo!</H1></form>
+    <!--Formulario de Inserção de informação-->
+    <div class="container"><h1>Bem vindo!</h1></div>
+    <div class="container2"><input type="number" id="valor" placeholder="Digite o valor que deseja converter">
+    <button onclick="converter()">Converter</button>
+    <button onclick="limpar()">Limpar</button>
+    <select id="moeda">
+        <option value="USD">Dolar (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="GBP">Libra (GBP)</option>
+        <option value="Iene">Iene (JPY)</option>
+        <option value="CNY">YUAN (CNY)</option>
+        <option value="Gold">Ouro</option>
+    </select>
+    <!----Resultado exibido-->
+   </div>
+   <div id="Resultado">O Valor Será:</div>
 </body>
 </html>
