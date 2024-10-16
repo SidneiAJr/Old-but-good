@@ -1,9 +1,15 @@
-.testando{
+.container{
     text-align: center;
-    border: color(srgb red green blue);
-
+    border: 0px;
+    float: none;
+    background-color:brown;
 }
-.titulo{
+.container2{
     text-align: center;
-    color: black;
+    border: 0px;
+    float: none;
+    background-color:gray;
+}
+.Resultado{
+    text-align: center;
 }
