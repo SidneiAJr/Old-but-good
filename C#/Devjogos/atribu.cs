@@ -31,10 +31,10 @@ class inimigo{
     public int forca;
     public int vida;
     public void atacar(){
-         Console.WriteLine($"O Inimigo {nome} Ataca com {forca} de forca , e tem vida {vida} ");
+         Console.WriteLine($"O Inimigo {nome} tem de vida{vida} e tem forca {forca} ");
        }
        public void Andar(){
-        Console.WriteLine($"{nome}esta Andando.");
+        Console.WriteLine($"{nome} esta Andando.");
        }
        public inimigo(string nomeinimigo, int forcaInicial, int vidaIni){
           nome = nomeinimigo;
