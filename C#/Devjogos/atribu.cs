@@ -12,7 +12,7 @@ using System;
        public double velataque;
 
        public void atacar(){
-         Console.WriteLine($"{nome}Ataca com {forca} Pontos de forca,e tem {velataque}Velocidade de ataque base, O % de roubo de vida é{roubovida}");
+         Console.WriteLine($"O Personagem {nome} Ataca com {forca}, e tem de velocidade de ataque {velataque} Velocidade de ataque base, seu roubo de vida é {roubovida}");
        }
        public void Andar(){
         Console.WriteLine($"{nome}está Andando.");
@@ -24,16 +24,38 @@ using System;
           velataque = velataque2;
           roubovida = roubo;
        }
-           
 }
+
+class inimigo{
+    public string nome;
+    public int forca;
+    public int vida;
+    public void atacar(){
+         Console.WriteLine($"O Inimigo {nome} Ataca com {forca}");
+       }
+       public void Andar(){
+        Console.WriteLine($"{nome}está Andando.");
+       }
+       public inimigo(string nomeinimigo, int forcaInicial, int vidaIni){
+          nome = nomeinimigo;
+          forca = forcaInicial;
+          vidaIni= vida;
+       }
+}
+
 
 class Jogo
 {
             static void Main(string[] arg){
                 //Criar um personagem
-                personagem personagem1 = new personagem("Queen",20,1,100,0.75);
+                personagem personagem1 = new personagem("Queen",20,4,1.25,0.75);
                 personagem1.atacar();
                 personagem1.Andar();
+                inimigo inimigo1 = new inimigo("zumbi",20,400);
+                inimigo1.atacar();
+                inimigo1.Andar();
+
+                
 
 
             }
