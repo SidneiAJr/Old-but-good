@@ -8,7 +8,6 @@ namespace Teste
         return resultado;
         }
         static void Main(string[]args){
-            Funcao meuObj= new funcao;
             Teste meuObj = new Teste();
             double numero = meuObj.calculo(5,6);
             Console.WriteLine(numero+10);
