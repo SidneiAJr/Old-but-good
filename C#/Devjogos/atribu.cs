@@ -12,10 +12,10 @@ using System;
        public double velataque;
 
        public void atacar(){
-         Console.WriteLine($"O Personagem {nome} Ataca com {forca}, e tem de velocidade de ataque {velataque} Velocidade de ataque base, seu roubo de vida é {roubovida}");
+         Console.WriteLine($"O Personagem {nome} Ataca com forca de {forca}, e tem de velocidade de ataque {velataque} Velocidade de ataque, seu roubo de vida e {roubovida}");
        }
        public void Andar(){
-        Console.WriteLine($"{nome}está Andando.");
+        Console.WriteLine($"{nome}esta Andando em direcao ao monstro");
        }
        public personagem(string nomepersonagem,int forcaInicial,int VidaInicial, double velataque2,double roubo){
           nome = nomepersonagem;
@@ -30,13 +30,16 @@ class inimigo{
     public string nome;
     public int forca;
     public int vida;
-    public void atacar(){
-         Console.WriteLine($"O Inimigo {nome} tem de vida{vida} e tem forca {forca} ");
+    public string tipo;
+    public void atacar(personagem meuPersonagem){
+         meuPersonagem.vida -= forca;
+         Console.WriteLine($"O inimigo ataca {tipo},ataca Personagem {meuPersonagem.nome} deixando ele com {meuPersonagem.vida} Pontos de vida");
        }
        public void Andar(){
         Console.WriteLine($"{nome} esta Andando.");
        }
        public inimigo(string nomeinimigo, int forcaInicial, int vidaIni){
+          tipo = "Monstro";
           nome = nomeinimigo;
           forca = forcaInicial;
           vidaIni= vida;
@@ -48,11 +51,11 @@ class Jogo
 {
             static void Main(string[] arg){
                 //Criar um personagem
-                personagem personagem1 = new personagem("Queen",20,4,1.25,0.75);
+                personagem personagem1 = new personagem("Queen",5,100,1.25,0.75);
                 personagem1.atacar();
                 personagem1.Andar();
                 inimigo inimigo1 = new inimigo("Pelego",20,400);
-                inimigo1.atacar();
+                inimigo1.atacar(personagem1);
                 inimigo1.Andar();
 
                 
