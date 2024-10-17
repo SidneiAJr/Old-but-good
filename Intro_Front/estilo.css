@@ -54,5 +54,7 @@ width: 100%;
 padding: 10px;
 background-color:grey;
 cursor: pointer;
-
+}
+button:hover{
+    background-color: black;
 }
