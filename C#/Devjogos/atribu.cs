@@ -12,7 +12,7 @@ using System;
        public double velataque;
 
        public void atacar(){
-         Console.WriteLine($"O Personagem {nome} Ataca com forca de {forca}, e tem de velocidade de ataque {velataque}, com roubo de vida de {roubovida}");
+         Console.WriteLine($"Personagem {nome} Ataca com forca de {forca}, e tem de velocidade de ataque {velataque}, com roubo de vida de {roubovida}");
        }
        public void Andar(){
         Console.WriteLine($"{nome} esta Andando em direcao ao monstro");
@@ -33,7 +33,7 @@ class inimigo{
     public string tipo;
     public void atacar(personagem meuPersonagem){
          meuPersonagem.vida -= forca;
-         Console.WriteLine($"O inimigo do tipo {tipo},ataca Personagem {meuPersonagem.nome} deixando ele com {meuPersonagem.vida} Pontos de vida");
+         Console.WriteLine($"O inimigo do tipo {tipo},ataca Personagem {meuPersonagem.nome} abaixando sua vida, para {meuPersonagem.vida} Pontos de vida");
        }
        public void Andar(){
        }
@@ -50,10 +50,10 @@ class Jogo
 {
             static void Main(string[] arg){
                 //Criar um personagem
-                personagem personagem1 = new personagem("Dama Vermelha",5,100,1.25,0.75);
+                personagem personagem1 = new personagem("Dama Vermelha",5,100,0.45,0.75);
                 personagem1.atacar();
                 personagem1.Andar();
-                inimigo inimigo1 = new inimigo("Pelego",20,400);
+                inimigo inimigo1 = new inimigo("Monstro",5,400);
                 inimigo1.atacar(personagem1);
                 inimigo1.Andar();
 
