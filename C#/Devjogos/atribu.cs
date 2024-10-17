@@ -15,7 +15,7 @@ using System;
          Console.WriteLine($"O Personagem {nome} Ataca com forca de {forca}, e tem de velocidade de ataque {velataque} Velocidade de ataque, seu roubo de vida e {roubovida}");
        }
        public void Andar(){
-        Console.WriteLine($"{nome}esta Andando em direcao ao monstro");
+        Console.WriteLine($"{nome} esta Andando em direcao ao monstro");
        }
        public personagem(string nomepersonagem,int forcaInicial,int VidaInicial, double velataque2,double roubo){
           nome = nomepersonagem;
@@ -33,10 +33,10 @@ class inimigo{
     public string tipo;
     public void atacar(personagem meuPersonagem){
          meuPersonagem.vida -= forca;
-         Console.WriteLine($"O inimigo ataca {tipo},ataca Personagem {meuPersonagem.nome} deixando ele com {meuPersonagem.vida} Pontos de vida");
+         Console.WriteLine($"O inimigo do tipo {tipo},ataca Personagem {meuPersonagem.nome} deixando ele com {meuPersonagem.vida} Pontos de vida");
        }
        public void Andar(){
-        Console.WriteLine($"{nome} esta Andando.");
+        Console.WriteLine($"{nome} esta Andando em direcao");
        }
        public inimigo(string nomeinimigo, int forcaInicial, int vidaIni){
           tipo = "Monstro";
