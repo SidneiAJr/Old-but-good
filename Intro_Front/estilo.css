@@ -58,3 +58,9 @@ cursor: pointer;
 button:hover{
     background-color: black;
 }
+#resultado{
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
