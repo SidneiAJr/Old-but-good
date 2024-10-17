@@ -31,10 +31,10 @@ class inimigo{
     public int forca;
     public int vida;
     public void atacar(){
-         Console.WriteLine($"O Inimigo {nome} Ataca com {forca}");
+         Console.WriteLine($"O Inimigo {nome} Ataca com {forca} de forca , e tem vida {vida} ");
        }
        public void Andar(){
-        Console.WriteLine($"{nome}está Andando.");
+        Console.WriteLine($"{nome}esta Andando.");
        }
        public inimigo(string nomeinimigo, int forcaInicial, int vidaIni){
           nome = nomeinimigo;
@@ -51,7 +51,7 @@ class Jogo
                 personagem personagem1 = new personagem("Queen",20,4,1.25,0.75);
                 personagem1.atacar();
                 personagem1.Andar();
-                inimigo inimigo1 = new inimigo("zumbi",20,400);
+                inimigo inimigo1 = new inimigo("Pelego",20,400);
                 inimigo1.atacar();
                 inimigo1.Andar();
 
