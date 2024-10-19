@@ -3,12 +3,15 @@ namespace Teste
 {
     class Teste
     {
-        public void calculo(string Nome = "Albertao",double altura = 1.72, int idade = 26){
-        Console.WriteLine ($"Seu Nome e {Nome} e voce tem  {altura} e tenho de idade {idade}");
+        public void calculo(){
+        int minhaBase = 5;
+        int altura = 10;
+        int area = minhaBase*altura;
+        Console.WriteLine("A Area total do retangulo e:{0}",area);
         }
         static void Main(string[]args){
             Teste meuObj = new Teste();
-            meuObj.calculo("Albertao",1.72,26);
+            meuObj.calculo();
         }
 
     }
