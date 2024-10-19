@@ -2,14 +2,14 @@ let opcao = prompt("1-Cadastrar Aluno\n2-Listar Alunos\n3-Cadastrar notas\n4-Sai
 let notas = []
 
 //Menu de Opção 
-while(opcao!=='4'){
+while(opcao!=='3'){
     switch(opcao){
       case '1':
       cadfun()
       break
       case '2':
       listarAluno()
-      case '4':
+      case '3':
       alert('Sair')
       break
       default:
@@ -39,6 +39,6 @@ function cadfun(){
 //Função para listar aluno
 function listarAluno(){
     for(let i=0;i<notas.length; i++){
-    alert(`==Listar Aluno Cadastrado==\nNome do Aluno: ${notas[i].alunonome} ,A media do aluno é: ${notas[i].resultado} \n=======`)
+    alert(`==Listar Aluno Cadastrado==\nNome do Aluno: ${notas[i].alunonome}  A media do aluno é: ${notas[i].resultado} \n=======`)
  }
  }
