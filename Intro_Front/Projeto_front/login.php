@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>Sistema</title>
+<link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+<title>Sistema</title>
 </head>
 <body>
 <body>
@@ -39,17 +40,16 @@
           </div>
         </div>
       </nav>
-      <form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text"></div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Senha</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
+  <div id="container">
+  <form name="f_cad" method="post" action="reb_login.php">
+    <label>Nome</label>
+    <input type="text" name="f_nome" size="20"></br>
+    <label>Senha</label>
+    <input type="password" name="f_senha" size="20"></br>
+    <input type="submit" value="Enviar"/>
+    <input type="reset" value="Limpar"/>
+
 </form>
+</div>
 </body>
 </html>
