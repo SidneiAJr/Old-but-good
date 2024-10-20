@@ -23,6 +23,9 @@ int main(){
     }
     cout << "\nResultado E:" <<   resultado;
     
+    for (int i = 0; resultado >10; i++) {
+    std::cout << i << "\n";
+}
 
    
     
