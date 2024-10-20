@@ -14,13 +14,15 @@ int main(){
     cout <<"Digite a nota 3:";
     cin >> nota3;
     resultado=(nota1+nota2+nota3)/3;
-    cout << "Resultado E: " <<   resultado;
     if(resultado>5){
         cout << "Aluno Aprovado!!";
+    }else if(resultado>4){
+        cout << "Aluno em recuperacao!!";
     }else{
-        cout << "Aluno Reprovado!!";
+       cout << "Aluno Reprovado!!"; 
     }
-    return 0;
+    cout << "\nResultado E:" <<   resultado;
+    
 
    
     
