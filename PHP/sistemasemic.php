@@ -16,8 +16,8 @@ switch ($opcao) {
 
 function notas(): void
 {
-	$resultado = $num1+$num2+$num3;
-	$num1 = (int)readline("Insira um numero: ");
+    $resultado = $num1+$num2+$num3;
+    $num1 = (int)readline("Insira um numero: ");
     $num2 = (int)readline("Insira um numero: ");
     $num3 = (int)readline("Insira um numero: ");
     print "O valor é: $resultado\n";
