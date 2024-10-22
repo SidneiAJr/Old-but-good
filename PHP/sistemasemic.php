@@ -29,6 +29,8 @@ function cadAluno(): void
 	print "O nome do aluno é: $nomealuno\n";
 	return;
 }
+function listAluno():void{
+}
 
 
 
