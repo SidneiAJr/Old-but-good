@@ -1,9 +1,11 @@
-.container{
-    text-align: center;
-}
-.container2{
-    background-color: grey;
-}
 body{
-  background-color: grey;  
+  background-color: black; 
+
+}
+footer{
+  text-align: center;
+  background-color: black;
+  color: red;
+  padding: 40px;
+  margin-top: 20px;
 }
