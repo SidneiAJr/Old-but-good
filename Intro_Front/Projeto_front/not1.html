@@ -7,108 +7,83 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="estilo.css">
 
     <title>Pagina Noticia</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href=""><i class="bi bi-house"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-book"></i>Informações</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-rss"></i>Noticias</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><i class="bi bi-broadcast"></i>Radio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html"><i class="bi bi-person"></i>Login</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <div><div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Cibersegurança</h5>
-              <img src="img/firewall.png"  width="100px" height="100px"  class="d-flex justify-content-center">
-              <p class="card-text">Ler Sobre</p>
-              <a href="not1.html" class="btn btn-dark">Ler</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Cursos sobre segurança</h5>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/1920px-Udemy_logo.svg.png"  width="100px" height="100px"  class="d-flex justify-content-center">
-              <p class="card-text">Informações</p>
-              <a href="not2.html" class="btn btn-dark">Ler</a>
-            </div>
-          </div>
-        </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house">Inicio</i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-rss"></i>Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-rss"></i>Noticias</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+        </form>
       </div>
+    </div>
+  </nav>
+      <div id="caixa">
       <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="d-flex justify-content-center">
           <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Kaspersky_logo.svg/1920px-Kaspersky_logo.svg.png" width="100px" height="100px">
             <div class="card-body">
-              <h5 class="card-title">Sobre Antivirus</h5>
-              <p class="card-text">Ler noticia</p>
-              <a href="not3.html" class="btn btn-dark">Ler</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Tecmundo_2x.png"width="100px" height="100px">
-            <div class="card-body">
-              <h5 class="card-title">Noticia Sobre Tecnologia</h5>
-              <p class="card-text">Ler noticia</p>
-              <a href="not4.html" class="btn btn-dark">Ler</a>
+              </p><h2 class="card-title">Cibersegurança</h2>
+              <div class="clearfix">
+                <!------Noticia Inserir Aqui-->
+                <img src="img/firewall.png" class="col-md-6 float-md-end mb-3 ms-md-3">
+
+                <h6>Cibersegurança E uma area da Tecnologia da Informação que visa proteger os dados dos usuarios armazenados e sistema operacionais contra pessoa mal itencionadas.
+                 </h6>
+                <p>
+                Em redes de computadores, existe aquilo que nos chamamos de vunerabilidades, podem ser acessada com um backdoor, ou tambem existe aqueles grupos que exploram as vunerabilidades para uso proprio ou para chantagem da empresa afetada.
+                </p>
+                <p>
+                Na segurança da informação, sistema operacionais podem ser atingidos por virus com o windows, no Linux já e um pouco mais dificil, porem o mesmo pode ser atingido.
+                </p>
+                <p>
+                Na area de vunerabilidade temos ferramentas que testão como KaliLinux o Metaexploit.
+                </p>
+                <p>Na area de Redes, temos algumas ferramentas que podem ajudar a proteger, com o firewall que esta na imagem ao lado, o firewall funciona como uma especie de parede filtrando os pacotes TCP/UDP que são trafegados na rede, por meio dele podemos bloquear alguns acesso não atuorizados, reduzir acesso do usuario a determinadas ferramentas web.</p>
+
+              </div>
+              <nav aria-label="Noticia">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="not1.html" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="not1.html">1</a></li>
+                  <li class="page-item"><a class="page-link" href="not2.html">2</a></li>
+                  <li class="page-item"><a class="page-link" href="not3.html">3</a></li>
+                  <li class="page-item"><a class="page-link" href="not4.html">4</a></li>
+                  <li class="page-item"><a class="page-link" href="not5.html">5</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="https://www.tecmundo.com.br/seguranca/294084-sabesp-alvo-ataque-cibernetico-terca-22.htm" class="btn btn-dark">Link sobre Cibersegurança</a>
+
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/800px-Tux.svg.png" width="100px" height="100px">
-            <div class="card-body">
-              <h5 class="card-title">Sobre Linux</h5>
-              <p class="card-text">Ler noticia</p>
-              <a href="not5.html" class="btn btn-dark">Ler</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/VirtualBox_Kali_Linux_21.01_x64_Desktop_GER_26_02_2021_16_59_25.png/1920px-VirtualBox_Kali_Linux_21.01_x64_Desktop_GER_26_02_2021_16_59_25.png" width="100px" height="100px">
-            <div class="card-body">
-              <h5 class="card-title">Sobre KaliLinux</h5>
-              <p class="card-text">Ler noticia</p>
-              <a href="not6.html" class="btn btn-dark">Ler</a>
-            </div>
-          </div>
-        </div>
       </div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">&copy;  <footer></footer> Direitos Reservados</nav>
-      
-</body>
-</html>
+       </body>
+       </html> 
