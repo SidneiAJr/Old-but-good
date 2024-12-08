@@ -15,7 +15,7 @@ mostrar_menu() {
     echo "7) Atualização de distro com dist-upgrade"
     echo "8) Sair"
     echo "===================================="
-    echo -n "Escolha uma opção [1-9]: "
+    echo -n "Escolha uma opção [1-8]: "
 }
 
 # Função 1: Exibir data e hora
