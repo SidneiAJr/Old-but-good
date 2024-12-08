@@ -39,7 +39,21 @@ Limpeza de disco(){
      sudo apt autoremove -y
      pause
 }
-
+Atualização com APT-Upgrade(){
+   echo "Atualizar Sistema operacional"
+   sudo apt update -y
+   pause
+}
+Atualização com APT-Update(){
+   echo "Atualizar Sistema operacional"
+   sudo apt upgrade -y
+   pause
+}
+Atualização de Distro(){
+   echo "Atualizar Distro"
+   sudo apt dist-update -y
+   pause
+}
 # Função para pausar a execução e voltar ao menu
 pause() {
     read -p "Pressione [Enter] para continuar..."
