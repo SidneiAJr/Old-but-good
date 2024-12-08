@@ -19,14 +19,14 @@ mostrar_menu() {
 }
 
 # Função 1: Exibir data e hora
-Instalar HTOP() {
+instalar_htop() {
     echo "Instalar HTOP"
     sudo apt install htop -y
     pause
 }
 
 # Função 2: Listar arquivos no diretório atual
-Instalar VIM() {
+instalar_vim() {
     echo "Instalar Vim"
     sudo apt install vim -y
     pause
@@ -38,22 +38,17 @@ mostrar_espaco_disco() {
     df -h
     pause
 }
-Limpeza de disco(){
+limpeza_de_disco(){
      echo "Limpeza de Disco"
      sudo apt autoremove -y
      pause
 }
-Atualização com APT-Upgrade(){
+atualização_com_apt(){
     echo "Atualizar Sistema operacional"
     sudo apt update -y
     pause
 }
-Atualização com APT-Update(){
-    echo "Atualizar Sistema operacional"
-    sudo apt upgrade -y
-    pause
-}
-Atualização de Distro(){
+atualizacao_distro(){
     echo "Atualizar Distro"
     sudo apt dist-update -y
     pause
@@ -68,13 +63,12 @@ while true; do
     mostrar_menu
     read opcao
     case $opcao in
-        1) Instalar HTOP ;;
-        2) Instalar VIM ;;
+        1) instalar_htop ;;
+        2) instalar_vim ;;
         3) mostrar_espaco_disco ;;
-        4) Limpeza de disco;;
-        5) Atualização com APT-Upgrade;;
-        6) Atualização com APT-Update;;
-        7) Atualização de Distro;;
+        4) limpeza_de_disco;;
+        5) atualização_com_apt;;
+        7) atualizacao_distro;;
         8) echo "Saindo..."; exit 0 ;;
         *) echo "Opção inválida. Tente novamente."; pause ;;
     esac
