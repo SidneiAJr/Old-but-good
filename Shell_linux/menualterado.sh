@@ -9,9 +9,13 @@ mostrar_menu() {
     echo "1) Instalar HTOP"
     echo "2) Instalar VIM"
     echo "3) Mostrar espaço livre em disco"
-    echo "4) Sair"
+    echo "4) Limpeza com Autoremove"
+    echo "5) Atualização com Update"
+    echo "6) Atualização com Upgrade"
+    echo "7) Atualização de distro com dist-upgrade"
+    echo "8) Sair"
     echo "===================================="
-    echo -n "Escolha uma opção [1-4]: "
+    echo -n "Escolha uma opção [1-9]: "
 }
 
 # Função 1: Exibir data e hora
