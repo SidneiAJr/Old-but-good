@@ -8,10 +8,10 @@ mostrar_menu() {
     echo "===================================="
     echo "1) Instalar HTOP"
     echo "2) Instalar VIM"
-    echo "3) Mostrar espaço livre em disco"
+    echo "3) Mostrar Espaço livre em disco"
     echo "4) Limpeza com Autoremove"
     echo "5) Atualização com Update"
-    echo "6) Atualização com Upgrade"
+    echo "6) Limpa Sistema com Comado Clean"
     echo "7) Chamar Firefox"
     echo "8) Verifica com Neofetch"
     echo "9) Instala NMAP"
@@ -96,13 +96,12 @@ while true; do
         3) mostrar_espaco_disco ;;
         4) limpeza_de_disco;;
         5) atualização_com_apt;;
-        7) atualizacao_distro;;
-        8) limpa_distro;;
-        9) chama_firefox;;
-        10)verifica_os;;
-        11)instala_nmap;;
-        12)Instala WineHQ;;
-        13) echo "Saindo..."; exit 0 ;;
+        6) limpa_distro;;
+        7) chama_firefox;;
+        8) verifica_os;;
+        9) instala_nmap;;
+        10)instala_WineHQ;;
+        11) echo "Saindo..."; exit 0 ;;
         *) echo "Opção inválida. Tente novamente."; pause ;;
     esac
 done
