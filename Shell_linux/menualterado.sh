@@ -58,11 +58,18 @@ chama_firefox(){
     firefox
     pause
 }
-Verifica OS(){
+verifica_os(){
     echo "Roda o Neofetch"
     neofetch
     pause
 }
+verifica_os(){
+    echo "Roda o Neofetch"
+    neofetch
+    pause
+}
+
+
 
 
 # Função para pausar a execução e voltar ao menu
@@ -81,9 +88,9 @@ while true; do
         4) limpeza_de_disco;;
         5) atualização_com_apt;;
         7) atualizacao_distro;;
-        8) limpa_distro
-        9)chama_firefox
-        10)Verifica OS
+        8) limpa_distro;;
+        9) chama_firefox;;
+        10)verifica_os;;
         11) echo "Saindo..."; exit 0 ;;
         *) echo "Opção inválida. Tente novamente."; pause ;;
     esac
