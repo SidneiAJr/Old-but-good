@@ -16,7 +16,8 @@ mostrar_menu() {
     echo "8) Verifica com Neofetch"
     echo "9) Instala NMAP"
     echo "10) Instala WINEHQ"
-    echo "11) Sair"
+    echo "11) Roda DKPG configure --a"
+    echo "12) Sair"
     
     echo "===================================="
     echo -n "Escolha uma opção [1-11]: "
