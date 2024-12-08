@@ -80,6 +80,11 @@ instala_WineHQ(){
    sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bullseye/winehq-bullseye.sources
    pause
 }
+Conserta_depedencias(){
+   echo "Conserta dependecia"
+   sudo dpkg --configure -a
+   pause
+}
 
 # Função para pausar a execução e voltar ao menu
 pause() {
@@ -101,6 +106,7 @@ while true; do
         8) verifica_os;;
         9) instala_nmap;;
         10)instala_WineHQ;;
+        11)Conserta_depedencias;;
         11) echo "Saindo..."; exit 0 ;;
         *) echo "Opção inválida. Tente novamente."; pause ;;
     esac
