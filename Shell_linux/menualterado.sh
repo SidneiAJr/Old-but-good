@@ -68,8 +68,10 @@ while true; do
         2) Instalar VIM ;;
         3) mostrar_espaco_disco ;;
         4)Limpeza de disco;;
-        
-        7) echo "Saindo..."; exit 0 ;;
+        5)Atualização com APT-Upgrade;;
+        6)Atualização com APT-Update;;
+        7)Atualização de Distro;;
+        8) echo "Saindo..."; exit 0 ;;
         *) echo "Opção inválida. Tente novamente."; pause ;;
     esac
 done
