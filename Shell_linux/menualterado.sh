@@ -16,10 +16,10 @@ mostrar_menu() {
     echo "8) Verifica com Neofetch"
     echo "9) Instala NMAP"
     echo "10) Instala WINEHQ"
-    echo "13) Sair"
+    echo "11) Sair"
     
     echo "===================================="
-    echo -n "Escolha uma opção [1-13]: "
+    echo -n "Escolha uma opção [1-11]: "
 }
 
 # Função 1: Exibir data e hora
@@ -107,7 +107,7 @@ while true; do
         9) instala_nmap;;
         10)instala_WineHQ;;
         11)Conserta_depedencias;;
-        11) echo "Saindo..."; exit 0 ;;
+        12) echo "Saindo..."; exit 0 ;;
         *) echo "Opção inválida. Tente novamente."; pause ;;
     esac
 done
