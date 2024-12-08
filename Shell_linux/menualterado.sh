@@ -12,10 +12,14 @@ mostrar_menu() {
     echo "4) Limpeza com Autoremove"
     echo "5) Atualização com Update"
     echo "6) Atualização com Upgrade"
-    echo "7) Atualização de distro com dist-upgrade"
-    echo "8) Sair"
+    echo "7) Chamar Firefox"
+    echo "8) Verifica com Neofetch"
+    echo "9) Instala NMAP"
+    echo "10) Instala WINEHQ"
+    echo "13) Sair"
+    
     echo "===================================="
-    echo -n "Escolha uma opção [1-8]: "
+    echo -n "Escolha uma opção [1-13]: "
 }
 
 # Função 1: Exibir data e hora
@@ -63,14 +67,19 @@ verifica_os(){
     neofetch
     pause
 }
-verifica_os(){
-    echo "Roda o Neofetch"
-    neofetch
-    pause
+instala_nmap(){
+   echo "Instala o nmap"
+   sudo apt install nmap -y
+   pause
 }
-
-
-
+instala_WineHQ(){
+   echo " Instala WineHQ para debian 11"
+   sudo dpkg --add-architecture i386
+   sudo mkdir -pm755 /etc/apt/keyrings
+   wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo gpg --dearmor -o /etc/apt/keyrings/winehq-archive.key -
+   sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bullseye/winehq-bullseye.sources
+   pause
+}
 
 # Função para pausar a execução e voltar ao menu
 pause() {
@@ -91,7 +100,9 @@ while true; do
         8) limpa_distro;;
         9) chama_firefox;;
         10)verifica_os;;
-        11) echo "Saindo..."; exit 0 ;;
+        11)instala_nmap;;
+        12)Instala WineHQ;;
+        13) echo "Saindo..."; exit 0 ;;
         *) echo "Opção inválida. Tente novamente."; pause ;;
     esac
 done
