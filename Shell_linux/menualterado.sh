@@ -15,16 +15,16 @@ mostrar_menu() {
 }
 
 # Função 1: Exibir data e hora
-exibir_data_hora() {
+Instalar HTOP() {
     echo "Instalar HTOP"
     sudo apt install htop -y
     pause
 }
 
 # Função 2: Listar arquivos no diretório atual
-listar_arquivos() {
+Instalar VIM() {
     echo "Instalar Vim"
-    Sudo apt install vim -y
+    sudo apt install vim -y
     pause
 }
 
@@ -33,6 +33,11 @@ mostrar_espaco_disco() {
     echo "Espaço livre no disco:"
     df -h
     pause
+}
+Limpeza de disco(){
+     echo "Limpeza de Disco"
+     sudo apt autoremove -y
+     pause
 }
 
 # Função para pausar a execução e voltar ao menu
@@ -45,10 +50,12 @@ while true; do
     mostrar_menu
     read opcao
     case $opcao in
-        1) exibir_data_hora ;;
-        2) listar_arquivos ;;
+        1) Instalar HTOP ;;
+        2) Instalar VIM ;;
         3) mostrar_espaco_disco ;;
-        4) echo "Saindo..."; exit 0 ;;
+        4)Limpeza de disco;;
+        
+        7) echo "Saindo..."; exit 0 ;;
         *) echo "Opção inválida. Tente novamente."; pause ;;
     esac
 done
