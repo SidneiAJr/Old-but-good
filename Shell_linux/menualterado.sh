@@ -48,11 +48,23 @@ atualização_com_apt(){
     sudo apt update -y
     pause
 }
-atualizacao_distro(){
-    echo "Atualizar Distro"
-    sudo apt dist-update -y
+limpa_distro(){
+    echo "Limpa Sistema"
+    sudo apt clean -y
     pause
 }
+chama_firefox(){
+    echo "Chama O firefox"
+    firefox
+    pause
+}
+Verifica OS(){
+    echo "Roda o Neofetch"
+    neofetch
+    pause
+}
+
+
 # Função para pausar a execução e voltar ao menu
 pause() {
     read -p "Pressione [Enter] para continuar..."
@@ -69,7 +81,10 @@ while true; do
         4) limpeza_de_disco;;
         5) atualização_com_apt;;
         7) atualizacao_distro;;
-        8) echo "Saindo..."; exit 0 ;;
+        8) limpa_distro
+        9)chama_firefox
+        10)Verifica OS
+        11) echo "Saindo..."; exit 0 ;;
         *) echo "Opção inválida. Tente novamente."; pause ;;
     esac
 done
