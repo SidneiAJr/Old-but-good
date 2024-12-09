@@ -27,17 +27,21 @@ mostrar_espaco_disco() {
     df -h
     pause
 }
-# Roda comando Neofetch
-verifica_Os_neofetch(){
-    echo "Roda neofetch"
-    neofetch
-}
 abrehtop(){
     echo" o htop"
     htop
     pause
 }
-
+abrirvim(){
+    echo "Abrir Vim para criar Script"
+    Vim
+    pause
+}
+criarscriptnano(){
+    echo "Criar script com Nano"
+    Nano
+    pause
+}
 
 # Função para pausar a execução e voltar ao menu
 pause() {
@@ -52,7 +56,10 @@ while true; do
         1) verifica_atualiza ;;
         2) mostrar_espaco_disco ;;
         3) verifica_Os_neofetch ;;
-        4) echo "Saindo..."; exit 0 ;;
+        4) abrehtop;;
+        5) abrirvim;;
+        6) criarscriptnano;;
+        7) echo "Saindo..."; exit 0 ;;
         *) echo "Opção inválida. Tente novamente."; pause ;;
     esac
 done
