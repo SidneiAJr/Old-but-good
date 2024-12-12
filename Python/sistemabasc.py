@@ -1,4 +1,3 @@
-
 def insira_info():
     nome = input("Olá Insira seu nome: ")
     idade = int(input("Oá Insira sua idade: "))
@@ -13,7 +12,10 @@ def insira_info():
         print("Voce completou o ensino medio!")
     else:
         print("Voce não completou o ensino medio!")
-    
-    
-    
+def cadastra_info():
+    nome_abrigo = input("Insira o Nome")
+    id_abrigo = int(input("Insira o numero do abrigo"))
+    array_abrigo = []
+    array_abrigo.insert(i)
+cadastra_info()
 insira_info()
