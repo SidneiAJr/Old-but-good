@@ -53,6 +53,7 @@ def cadastra_info():
     nome_abrigo = input("Insira o Nome")
     id_abrigo = int(input("Insira o numero do abrigo"))
     array_abrigo = []
-    array_abrigo.insert(i)
+    array_abrigo.insert(nome_abrigo[i])
+    array_abrigo.insert(id_abrigo[i])
 menu()
 
