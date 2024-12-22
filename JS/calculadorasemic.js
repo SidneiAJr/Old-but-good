@@ -1,4 +1,5 @@
 const menu = prompt("Informa a opção 1 ou 4:")
+while(menu!=='4'){
 switch(menu){
     case '1':
     calc()
@@ -9,10 +10,15 @@ switch(menu){
     case '3':
     calc3()
     break
-    deFault:
+    case '4':
+    console.log("Sair")
+    default:
     console.log("Opção Invalida")
     break
 }
+menu = prompt("Informa a opção 1 ou 4:")
+}
+
 function calc(){
 const valorIni= Number(prompt("Favor Informar o Valor Inicial R$: "))
 const juros = Number(prompt("Favor Informar o juros do cupom % "))
