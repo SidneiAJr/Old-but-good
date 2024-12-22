@@ -1,4 +1,4 @@
-const menu = prompt("Informa a opção 1 ou 4:")
+let menu = prompt("Informa a opção 1 ou 4:")
 while(menu!=='4'){
 switch(menu){
     case '1':
