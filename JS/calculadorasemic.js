@@ -45,7 +45,7 @@ const juros2 = juros/100
 const ipcaAtual2 = ipcaAtual/100
 const somajuros = juros2+ipcaAtual2
 const calculo3 = valorIni*(1+somajuros)**tempo
-consta calc4 = calculo3 - valorIni
+const calc4 = calculo3 - valorIni
 console.log("O valor total em R$",Math.floor(calculo3))
 console.log("O valor do juros total será",Math.floor(calc4))
 if(tempo=>10){
