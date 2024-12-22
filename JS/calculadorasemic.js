@@ -14,16 +14,16 @@ switch(menu){
     break
 }
 function calc(){
-const valorIni= Number(prompt("Favor Informar o Valor Inicial: "))
-const juros = Number(prompt("Favor Informar o juros do cupom: "))
+const valorIni= Number(prompt("Favor Informar o Valor Inicial R$: "))
+const juros = Number(prompt("Favor Informar o juros do cupom % "))
 const tempo = Number(prompt("Favor Informar o Tempo em Anos "))
 const juros2 = juros/100
 const calculo = valorIni*(1+juros2)**tempo
 console.log("O Valor em R$",Math.floor(calculo))
 }
 function calc2(){
-const valorIni= Number(prompt("Favor Informar o Valor Inicial: "))
-const juros = Number(prompt("Favor Informar o juros do cupom: "))
+const valorIni= Number(prompt("Favor Informar o Valor Inicial R$: "))
+const juros = Number(prompt("Favor Informar o juros do cupom %: "))
 const tempo = Number(prompt("Favor Informar o Tempo em Meses "))
 const juros2 = juros/100
 const mes = tempo/12
@@ -31,8 +31,8 @@ const calculo2 = valorIni*(1+juros2)**mes
 console.log("O Valor em R$",Math.floor(calculo2))
 }
 function calc3(){
-const valorIni= Number(prompt("Favor Informar o Valor Inicial: "))
-const juros = Number(prompt("Favor Informar o juros do cupom: "))
+const valorIni= Number(prompt("Favor Informar o Valor Inicial R$:"))
+const juros = Number(prompt("Favor Informar o juros do cupom % : "))
 const ipcaAtual = Number(prompt("Favor Informe o ipca atual:"))
 const tempo = Number(prompt("Favor Informar o Tempo em Anos "))
 const juros2 = juros/100
