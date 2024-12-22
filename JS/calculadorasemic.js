@@ -34,8 +34,8 @@ return calculo.toFixed(100)
 function calc3(){
 const valorIni= Number(prompt("Favor Informar o Valor Inicial: "))
 const juros = Number(prompt("Favor Informar o juros do cupom: "))
+const ipcaAtual = Number(prompt("Favor Informe o ipca atual:"))
 const tempo = Number(prompt("Favor Informar o Tempo em Anos "))
-const ipcaAtual = Number(prompt("Favor Informe o ipca atual"))
 const juros2 = juros/100
 const ipcaAtual2 = ipcaAtual/100
 const somajuros = juros2+ipcaAtual2
