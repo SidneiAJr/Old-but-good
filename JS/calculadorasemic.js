@@ -19,7 +19,7 @@ const juros = Number(prompt("Favor Informar o juros do cupom % "))
 const tempo = Number(prompt("Favor Informar o Tempo em Anos "))
 const juros2 = juros/100
 const calculo = valorIni*(1+juros2)**tempo
-console.log("O Valor em R$",Math.floor(calculo))
+console.log("O Valor Total será R$:",Math.floor(calculo))
 }
 function calc2(){
 const valorIni= Number(prompt("Favor Informar o Valor Inicial R$: "))
@@ -28,7 +28,7 @@ const tempo = Number(prompt("Favor Informar o Tempo em Meses "))
 const juros2 = juros/100
 const mes = tempo/12
 const calculo2 = valorIni*(1+juros2)**mes
-console.log("O Valor em R$",Math.floor(calculo2))
+console.log("O Valor Total será R$:",Math.floor(calculo2))
 }
 function calc3(){
 const valorIni= Number(prompt("Favor Informar o Valor Inicial R$:"))
@@ -39,5 +39,12 @@ const juros2 = juros/100
 const ipcaAtual2 = ipcaAtual/100
 const somajuros = juros2+ipcaAtual2
 const calculo3 = valorIni*(1+somajuros)**tempo
-console.log("O Valor em R$",Math.floor(calculo3))
+console.log("O valor total em R$",calculo3)
+if(tempo=>10){
+   const calculo4 = calculo3*0.15
+   console.log("O Valor será do IR será de 15%",calculo4)
+}else if(tempo=>1){
+    const calculo5 = calculo3*0.20
+    console.log("O Valor será do IR será de 17,5%",calculo5)
+}
 }
