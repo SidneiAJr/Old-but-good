@@ -1,4 +1,4 @@
-let menu = prompt("Informa a opção 1 ou 4:")
+let menu = prompt("Informe uma opção de 1 a 4:")
 while(menu!=='4'){
 switch(menu){
     case '1':
@@ -48,11 +48,11 @@ const calculo3 = valorIni*(1+somajuros)**tempo
 const calc4 = calculo3 - valorIni
 console.log("O valor total em R$",Math.floor(calculo3))
 console.log("O valor do juros total será",Math.floor(calc4))
-if(tempo=>10){
+if(tempo>=10){
    const calculo4 = calculo3*0.15
-   console.log("O Valor será do IR será de 15%",Math.floor(calculo4))
+   console.log("O Valor será do IR será de 15%:",Math.floor(calculo4))
 }else if(tempo=>1){
     const calculo5 = calculo3*0.20
-    console.log("O Valor será do IR será de 17,5%",Math.floor(calculo5))
+    console.log("O Valor será do IR será de 17,5%:",Math.floor(calculo5))
 }
 }
