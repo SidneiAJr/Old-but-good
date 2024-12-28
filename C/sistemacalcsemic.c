@@ -2,27 +2,24 @@
 #include <stdlib.h>
 #include <math.h>
 int main () {
-   printf("Case em C!\n ");
-   int n1=0.0;
-
-
-   printf("Digite um mes em numero:");
-   scanf("%d",&n1);
+   int opcao=0.0;
+   printf("Digite a opcao\n 1-Calculadora de Juros\n 2- Calculadora de rendimento aplicao\n");
+   scanf("%d",&opcao);
 
    void calc()
    {
-       float rend,res,valorini;
+       double rend,res,valorini;
        printf("===Bem vindo a calculadora\n===");
-       printf("Digite o valor do rendimento:");
-       scanf("%f",&rend);
-       printf("Digite o valor o inicial da aplicacao:");
-       scanf("%f",&valorini);
+       printf("Digite o valor do rendimento:\n");
+       scanf("%lf",&rend);
+       printf("Digite o valor o inicial da aplicacao:\n");
+       scanf("%lf",&valorini);
        res = (rend*100)/valorini;
-       printf("%fO Valor Inicial",res);
+       printf("O Valor Inicial%.2lf\n",res);
    }
    void calc_rf()
    {
-       double valorInicial, valorFuturo, juros,jurosdiv,tempo;
+       double valorInicial, valorFuturo, juros,jurosdiv,tempo,impostos,vartempo;
        printf("===Bem vindo a calculadora===\n");
        printf("Digite o valor que deseja Investir:\n");
        scanf("%lf",&valorInicial);
@@ -31,11 +28,27 @@ int main () {
        printf("Digite o juros do cupom:\n");
        scanf("%lf",&juros);
        jurosdiv = juros/100;
-       valorFuturo = valorInicial * pow(1 + jurosdiv, tempo);
-       printf("O Valor total sera: %.2lf\n", valorFuturo);
+       vartempo = tempo*12;
+       valorFuturo = valorInicial * pow(1 + jurosdiv, vartempo);
+       if(tempo<=12)
+       {
+           impostos=valorInicial-valorFuturo*0.175;
+           printf("O Valor do imposto em R$ %.2lf\n",impostos);
+           printf("O Valor Total sera: R$ %.2lf\n",valorFuturo);
+       }else if(tempo>=24)
+       {
+           impostos=valorInicial-valorFuturo*0.15;
+           printf("O Valor do imposto em R$: %.2lf\n",impostos);
+           printf("O Valor Total sera: R$ %.2lf\n",valorFuturo);
+       }else{
+           impostos=valorInicial-valorFuturo*0.15;
+           printf("O Valor do imposto em R$: %.2lf\n",impostos);
+           printf("O Valor Total sera: R$ %.2lf\n",valorFuturo);
+       }
    }
-
-   switch(n1){
+   while(opcao!=3){
+        scanf("d",&opcao);
+    switch(opcao){
             case 1:
             calc();
             break;
@@ -46,6 +59,9 @@ int main () {
             printf("Opcao Invalida");
             break;
    }
+    printf("Digite a opcao\n 1-Calculadora de Juros\n 2- Calculadora de rendimento aplicao\n");
+   }
+
 
 
 
