@@ -46,6 +46,9 @@ int main () {
            printf("O Valor Total sera: R$ %.2lf\n",valorFuturo);
        }
    }
+   void calculadora()
+   {
+   }
    while(opcao!=3){
         scanf("d",&opcao);
     switch(opcao){
