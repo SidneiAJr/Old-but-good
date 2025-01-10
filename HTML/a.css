@@ -61,11 +61,13 @@ section {
 .icons img {
     margin: 1rem;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .icons img:hover {
     width: 30px;
     height: 30px;
+    background-color: var(--main-color);
 }
 
 .btn {
@@ -107,7 +109,7 @@ section {
 
 .content p {
     color: #fff;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 100;
     line-height: 1.8;
     padding: 1rem 0;
