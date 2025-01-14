@@ -34,3 +34,20 @@ public class Main
             
 	}
 }
+public class Main
+{
+	public static void main(String[] args) {
+		Double [] ar = {1.5,2.5,5.5};
+		Double [] ar2 = {1.5,2.5,5.5};
+		
+		Double[]res = new Double[ar.length];
+		
+		for (int i = 0; i < ar.length; i++) {
+                res[i] = ar[i] + ar2[i];
+            }
+            for (Double i : res) {
+                System.out.print(i + " ");
+            }
+            
+	}
+}
