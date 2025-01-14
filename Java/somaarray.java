@@ -15,3 +15,22 @@ public class Main
             
 	}
 }
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		String [] ar = {"a","b"};
+		String [] ar2 = {"a","b"};
+		
+		String[]res = new String[ar.length];
+		
+		for (int i = 0; i < ar.length; i++) {
+                res[i] = ar[i] + ar2[i];
+            }
+            for (String i : res) {
+                System.out.print(i + " ");
+            }
+            
+	}
+}
