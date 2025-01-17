@@ -1,4 +1,21 @@
- public static void calc1(){
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication1;
+import java.util.Scanner;
+
+
+/**
+ *
+ * @author vraudemesa
+ */
+public class JavaApplication1 {
+
+    
+    
+    
+    public static void calc1(){
         Scanner entrada = new Scanner(System.in);
         double valorIni;
         System.out.print("Digite o valor inicial: ");
@@ -46,9 +63,17 @@
         String salario;
         System.out.print("Digite seu Salario: ");
         salario = reb.nextLine();
+        double res;
+        int hrtr;
+        System.out.print("Digite as horas trabalhas ");
+        hrtr = reb.nextInt();
+        res = Double.parseDouble(salario);
+        double tl;
+        double rec = hrtr*30;
+        tl = res/rec;
         
         String[] info = {nome , sobrenome,tel,matricula,salario};
-        System.out.println("Olá Bem vindo: " + info[0] + " " + info[1]+ "Telefone: " + info[2]+ "Matricula: "+ info[3]+"Salario R$:"+ info[4]);
+        System.out.println("Ola Bem vindo:\n " + info[0] + " " + info[1]+ "Telefone: " + info[2]+ " Matricula: "+ info[3]+" Salario bruto R$: "+ info[4]+ " Valor hora R$: "+tl);
     }
     
     public static void main(String[] args) {
