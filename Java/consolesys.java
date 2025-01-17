@@ -70,10 +70,25 @@ public class JavaApplication1 {
         res = Double.parseDouble(salario);
         double tl;
         double rec = hrtr*30;
+        if(res>=2259.21 && res<=2826.65){
+            double desc = res*0.075;
+            System.out.println("O desconto de IR sera R$:"+desc);
+        }else if(res>=2826.66 && res<=3751.05){
+            double desc = res*0.15;
+            System.out.println("O desconto de IR sera R$:"+desc);
+        }else if(res>=3751.05 && res<=3751.06){
+            double desc = res*0.225;
+            System.out.println("O desconto de IR sera R$:"+desc);
+        }else{
+            double desc = res*0.275;
+             System.out.println("O desconto de IR sera R$:"+desc);
+        }
         tl = res/rec;
-        
+        tl = Math.round(tl * 100.0) / 100.0;
         String[] info = {nome , sobrenome,tel,matricula,salario};
-        System.out.println("Ola Bem vindo:\n " + info[0] + " " + info[1]+ "Telefone: " + info[2]+ " Matricula: "+ info[3]+" Salario bruto R$: "+ info[4]+ " Valor hora R$: "+tl);
+        System.out.println("Ola Bem vindo " + info[0] + " " + info[1]+ "Telefone: " + info[2]+ " Matricula: "+ info[3]+" Salario bruto R$: "+ info[4]);
+        System.out.println("Valor da hora R$:"+tl);
+        
     }
     
     public static void main(String[] args) {
