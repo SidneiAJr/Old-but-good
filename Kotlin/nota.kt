@@ -1,20 +1,22 @@
 fun main() {
     
-    print("Insira seu nome")
+    print("Insira seu nome: ")
     val nome = readLine()
-    print("Insira seu sobrenome")
+    print("Insira seu sobrenome: ")
     val sobrenome = readLine()
     println("ola $nome $sobrenome")
-    printl("Insira sua nota")
-    val n1 : Int = readLine()
-    printl("Insira sua nota")
-    val n2 : Int = readLine()
-    printl("Insira sua nota")
-    val n3 : int = readLine()
-    val res = (n1+n2+n3)
+    print("Insira sua nota: ")
+    val n1 : Int = readLine()?.toIntOrNull() ?: 0
+    print("Insira sua nota: ")
+    val n2 : Int = readLine()?.toIntOrNull() ?: 0
+    print("Insira sua nota: ")
+    val n3 : Int = readLine()?.toIntOrNull() ?: 0
+    val res = (n1+n2+n3)/3
+    if(res>=5){
+        print("Vai ter vrau")
+    }else{
+        print("Lascou Gurizada")
+    }
     println("Sua nota $res")
-    
-    
-    
     
 }
