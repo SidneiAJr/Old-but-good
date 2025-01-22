@@ -20,3 +20,15 @@ fun main() {
     
     println("O Resultado e $res")
 }
+fun main() {
+    
+    val a: Int = 1
+    val b: Int = 2
+    val c : Double = 2.5
+    val d : Double = 1.5
+    val r = a+b
+    println(r)
+    println(c+d)
+    println(d+c)
+    
+}
