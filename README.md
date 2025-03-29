@@ -6,7 +6,7 @@
 
 ## Este repositório inclui Estudo de programação:
 
-- Respositorio para Estudo em programação C,C#,C++,RUST,JAVA,JS,PY,BATCH,SHELL para linux debian.
+- Respositorio para Estudo em programação C,C#,C++,RUST,JAVA,JS,PY,BATCH,SHELL para linux debian,Ruby.
 - Em cada pasta esta os estudo por linguagem.
 
 
