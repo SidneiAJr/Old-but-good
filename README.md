@@ -2,7 +2,7 @@
 ![Linguagens do Repositorio](https://github.com/SidneiAJr/Prog_dev_est/blob/main/img/Linguagens.png)
 
 
-##🚀 Sobre este portfólio
+## 🚀 Sobre este portfólio
 
 1- Este repositório foi criado para documentar e compartilhar meus estudos em programação. Aqui você encontrará uma variedade de projetos e exercícios que abrangem diferentes linguagens de programação e paradigmas. Cada pasta está organizada por linguagem, permitindo que você explore os estudos em cada uma delas.
 
