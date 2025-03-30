@@ -21,7 +21,7 @@ Exemplos de código: Cada pasta de linguagem contém exemplos práticos e desafi
 2-Compartilhar Conhecimento: Criar uma base de conhecimento acessível que pode ser útil para outros desenvolvedores ou iniciantes que estejam aprendendo.
 
 ## Linguagens e Tecnologias Abordadas:
-  C: Conceitos básicos de programação e exemplos práticos para iniciantes.
+  1-C: Conceitos básicos de programação e exemplos práticos para iniciantes.
   
   C#: Conceitos básicos de programação e exemplos práticos para iniciantes.
   JS: Conceitos básicos de programação e exemplos práticos para iniciantes.
