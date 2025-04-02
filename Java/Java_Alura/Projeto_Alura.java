@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Digite a Opção:  ");
-        System.out.println("********************************************* ");
         int opcao = entrada.nextInt();
         double salario = 0;
         while (opcao != 5) {
@@ -19,7 +18,7 @@ public class Main {
                     salario = emp(salario, entrada);
                     break;
                 case 4:
-                    salario = finaciamento(salario, entrada);
+                    salario = financiamento(salario, entrada);
                     break;
                 default:
                     System.out.println("Opção inválida.");
@@ -50,7 +49,6 @@ public class Main {
         System.out.println("Informe Seu Salário:");
         salario = entrada.nextDouble();
         System.out.println("Informe sua idade:");
-        int idade = entrada.nextInt();
         double emprestimo = salario * 0.30;
         System.out.println("Temos uma oferta para você de R$ " + String.format("%.2f", emprestimo));
         System.out.println("Olá " + nome + ", bem-vindo!");
@@ -73,26 +71,36 @@ public class Main {
         return valorTotal;
     }
 
-    public static double finaciamento(double salario, Scanner entrada) {
+    public static double financiamento(double salario, Scanner entrada) {
         System.out.println("Bem-vindo ao sistema de Empréstimos!");
-        System.out.println("Faça Simulação de Finaciamento!");
+        System.out.println("Faça Simulação de Financiamento!");
         System.out.println("Insira o Valor que Gostaria de Retirar R$: ");
         double valor = entrada.nextDouble();
-        if(valor >=500000){
-            double jurosTotais = valor * 0.35;
-        }else if(valor>=1000000){
-            
-        }
-        System.out.println("Quantidade de Parcelas ");
+        System.out.println("Quantidade de Parcelas: ");
         int parcela = entrada.nextInt();
-
-        double valorTotal = valor + jurosTotais;
-        double emprestimototal = valorTotal / parcela;
-        System.out.println("Valor Total do Empréstimo será R$ " + String.format("%.2f", valorTotal));
-        System.out.println("Valor da Parcela será R$ " + String.format("%.2f", emprestimototal));
+        double jurosTotais = 0;
+        double valorTotal = 0;
+        double emprestimototal = 0;
+        if (valor >= 1000000) {
+            jurosTotais = valor * 0.50;
+            valorTotal = valor + jurosTotais;
+            emprestimototal = valorTotal / parcela;
+            System.out.println("Valor Total do Empréstimo será R$ " + String.format("%.2f", valorTotal));
+            System.out.println("Valor da Parcela será R$ " + String.format("%.2f", emprestimototal));
+        } else if (valor >= 500000) {
+            jurosTotais = valor * 0.35;
+            valorTotal = valor + jurosTotais;
+            emprestimototal = valorTotal / parcela;
+            System.out.println("Valor Total do Empréstimo será R$ " + String.format("%.2f", valorTotal));
+            System.out.println("Valor da Parcela será R$ " + String.format("%.2f", emprestimototal));
+        } else {
+            System.out.println("Valor de empréstimo abaixo do limite permitido.");
+            return 0;
+        }
         return valorTotal;
     }
 }
+
 
 
 
