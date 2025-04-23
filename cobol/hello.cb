@@ -1,5 +1,0 @@
-IDENTIFICATION DIVISION.
-        PROGRAM-ID. calc.
-        PROCEDURE DIVISION.
-            DISPLAY "Calculadora".
-            STOP RUN.
