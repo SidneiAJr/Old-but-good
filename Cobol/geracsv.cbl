@@ -4,7 +4,7 @@
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
        SELECT ARQCSV ASSIGN TO 
-       'C:\Users\\Desktop\Projetos-Trabalhos-2024\ARQCSV.CSV'
+       '' //Caminho da Pasta
        ORGANIZATION IS LINE SEQUENTIAL.
        DATA DIVISION.
        FILE SECTION.
