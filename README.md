@@ -1,6 +1,4 @@
-# Repositorio de Programação
-![Linguagens do Repositorio](https://github.com/SidneiAJr/Prog_dev_est/blob/main/img/Linguagens.png)
-
+# Repositorio de Programação | Estudo | Fique A Vontade
 
 ## 🚀 Sobre este portfólio
 
