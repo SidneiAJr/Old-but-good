@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 void medianota();
+void conversoridade();
 
 int main() {
     int op;
@@ -11,6 +12,9 @@ int main() {
     switch(op){
         case 1:
         medianota();
+        break;
+        case 2:
+        conversoridade();
         break;
         default:
         cout <<"Insira uma opção correta!!";
@@ -26,6 +30,15 @@ void medianota(){
     cin >> n2;
     cout <<"Digite a Nota 1:";
     cin >> n3;
-    cout << "O resultado da média é: " << resultado << endl;
     double resultado=(n1+n2+n3)/3;
+    cout << "O resultado da média é: " << resultado << endl;
+}
+void conversoridade(){
+    int idadehumano,idadetotal;
+    int idadedog = 7;
+    cout <<"Digite a idade Humana";
+    cin >> idadehumano;
+    idadetotal = idadehumano*idadedog;
+    cout << "A idade do dog será " << idadetotal;
+    
 }
