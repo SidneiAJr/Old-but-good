@@ -24,16 +24,9 @@ Exemplos de código: Cada pasta de linguagem contém exemplos práticos e desafi
   
   C#: Conceitos básicos de programação e exemplos práticos para iniciantes.
   
-  JS: Conceitos básicos de programação e exemplos práticos para iniciantes.
-  
-  Rust: Conceitos básicos de programação e exemplos práticos para iniciantes.
-  
   Java: Conceitos básicos de programação e exemplos práticos para iniciantes.
   
   PY: Conceitos básicos de programação e exemplos práticos para iniciantes.
   
   Batch: Conceitos básicos de programação e exemplos práticos para iniciantes.
   
-  Shell: Conceitos básicos de programação e exemplos práticos para iniciantes.
-  
-  Ruby: Conceitos básicos de programação e exemplos práticos para iniciantes.
